@@ -1,0 +1,136 @@
+A syntax error happened on fastapi-spotilike\Lib\site-packages\libcst\_nodes\expression.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+tokenizer error: unterminated string literal
+
+"
+^An error happened on fastapi-spotilike\Lib\site-packages\libcst\_typed_visitor.py.
+Traceback (most recent call last):
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\bump_pydantic\main.py", line 187, in run_codemods
+    output_tree = transformer.transform_module(input_tree)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\codemod\_command.py", line 71, in transform_module
+    tree = super().transform_module(tree)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\codemod\_codemod.py", line 108, in transform_module
+    return self.transform_module_impl(tree_with_metadata)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\codemod\_visitor.py", line 32, in transform_module_impl
+    return tree.visit(self)
+           ^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\_nodes\module.py", line 89, in visit
+    result = super(Module, self).visit(visitor)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\_nodes\base.py", line 227, in visit
+    _CSTNodeSelfT, self._visit_and_replace_children(visitor)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\_nodes\module.py", line 74, in _visit_and_replace_children
+    body=visit_body_sequence(self, "body", self.body, visitor),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\_nodes\internal.py", line 227, in visit_body_sequence
+    return tuple(visit_body_iterable(parent, fieldname, children, visitor))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\_nodes\internal.py", line 193, in visit_body_iterable
+    new_child = child.visit(visitor)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\_nodes\base.py", line 218, in visit
+    should_visit_children = visitor.on_visit(self)
+                            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_visitors.py", line 494, in on_visit
+    _visit_constructed_funcs(self._extra_visit_funcs, self._matchers, node, self)
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_visitors.py", line 435, in _visit_constructed_funcs
+    if matches(node, matcher, metadata_resolver=metadata_resolver):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1596, in matches
+    return extract(node, matcher, metadata_resolver=metadata_resolver) is not None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1572, in extract
+    return _matches(node, matcher, fetcher)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1487, in _matches
+    return _node_matches(node, matcher, metadata_lookup)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1434, in _node_matches
+    attribute_capture = _attribute_matches(actual, desired, metadata_lookup)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1296, in _attribute_matches
+    return _matches(
+           ^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1487, in _matches
+    return _node_matches(node, matcher, metadata_lookup)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1434, in _node_matches
+    attribute_capture = _attribute_matches(actual, desired, metadata_lookup)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1273, in _attribute_matches
+    return _sequence_matches(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1141, in _sequence_matches
+    result = _sequence_matches(nodes[1:], matchers, metadata_lookup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1141, in _sequence_matches
+    result = _sequence_matches(nodes[1:], matchers, metadata_lookup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1141, in _sequence_matches
+    result = _sequence_matches(nodes[1:], matchers, metadata_lookup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 970 more times]
+  File "C:\projets\fastapi-spotilike\fastapi-spotilike\Lib\site-packages\libcst\matchers\_matcher_base.py", line 1113, in _sequence_matches
+    if matcher.n > 0:
+       ^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+A syntax error happened on fastapi-spotilike\Lib\site-packages\libcst\matchers\__init__.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:1: expected one of (, *, +, -, ..., AWAIT, False, NAME, NUMBER, None, True, [, ~
+
+*
+^A syntax error happened on fastapi-spotilike\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:6: expected one of +, -, ..., AWAIT, False, NUMBER, None, True, ~
+
+to-def
+^A syntax error happened on fastapi-spotilike\Lib\site-packages\pydantic\_internal\_generate_schema.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:9: expected one of !=, %, &, (, *, **, +, ,, -, ., /, //, :, <, <<, <=, ==, >, >=, >>, @, [, ^, and, as, if, in, is, not, or, |
+
+with-info
+^A syntax error happened on fastapi-spotilike\Lib\site-packages\pydantic_core\core_schema.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:2: expected one of (, *, +, -, ..., AWAIT, EOF, False, NUMBER, None, True, [, break, continue, lambda, match, not, pass, ~
+
+is-instance
+^A syntax error happened on fastapi-spotilike\Lib\site-packages\sqlalchemy\orm\_orm_constructors.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:1: expected one of (, *, +, -, ..., AWAIT, False, NAME, NUMBER, None, True, [, ~
+
+*
+^A syntax error happened on fastapi-spotilike\Lib\site-packages\sqlalchemy\orm\mapper.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:1: expected one of (, *, +, -, ..., AWAIT, False, NAME, NUMBER, None, True, [, ~
+
+*
+^A syntax error happened on fastapi-spotilike\Lib\site-packages\sqlalchemy\orm\util.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:1: expected one of (, *, +, -, ..., AWAIT, False, NAME, NUMBER, None, True, [, ~
+
+*
+^A syntax error happened on fastapi-spotilike\Lib\site-packages\sqlalchemy\sql\_typing.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:1: expected one of (, *, +, -, ..., AWAIT, False, NAME, NUMBER, None, True, [, ~
+
+*
+^A syntax error happened on fastapi-spotilike\Lib\site-packages\uvicorn\logging.py. This file cannot be formatted.
+Check https://github.com/pydantic/bump-pydantic/issues/124 for more information.
+Syntax Error @ 1:1.
+parser error: error at 1:1: expected one of (, *, +, -, ..., AWAIT, EOF, False, NAME, NUMBER, None, True, [, break, continue, lambda, match, not, pass, ~
+
+%
+^
